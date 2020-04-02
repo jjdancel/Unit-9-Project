@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Unit 9 Project - Justine Dancel</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Sen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" type="image/png" href="images/favicon.ico">
+</head>
+<body>
+<header class="intro">
+	<div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 text-center">
+        <h1 class="font-weight-bold cafe-name">Monk&#39;s Cafe</h1>
+        <br>
+        <h2 class="tagline">&#34;THE COFFEE SHOP&#34; </h2>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="py-5" id="reservations-bg">
+  <div class="container reservations-section">
+  	<h1 class="text-center">Reservations</h1>
+    <div class="make-reservations bg-white text-center mx-auto">
+      <h2 class="text-center">Make a Reservation</h2>
+      	<br>
+    	<form>
+			  <div class="form-group row">
+			    <label for="name" class="col-sm-2 col-form-label">Name</label>
+			    <div class="col-sm-10">
+			      <input type="text" class="form-control" id="name">
+			    </div>
+			  </div>
+			  <div class="form-group row">
+			    <label for="day" class="col-sm-2 col-form-label">Day</label>
+			    <div class="col-sm-10">
+			      <input type="text" class="form-control" id="day">
+			    </div>
+			  </div>
+			  <div class="text-center">
+			  	  <button type="submit" class="btn btn-danger mx-auto">Submit</button>
+			  </div>
+		</form>
+	</div>
+<br>
+<br>
+	<div class="existing-reservations bg-white mx-auto">
+		<h2 id="reserved" class="text-center">Existing Reservations</h2>
+		<br>
+		 <table class="table table-bordered table-hover">
+			  <thead>
+			    <tr>
+			      <th scope="col">Name</th>
+			      <th scope="col">Day</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <th scope="row"></th>
+			      <td></td>
+			    </tr>
+			    <tr>
+			      <th scope="row"></th>
+			      <td></td>
+			    </tr>
+			    <tr>
+			      <th scope="row"></th>
+			      <td></td>
+			    </tr>
+			  </tbody>
+		</table>	
+	</div>
+  </div>
+</section>
+<section class="py-5 restaurant-location">
+	<div class="container">
+		<h1>Come Dine with Us</h1>
+		  <br>
+			<div class="container" id="map"></div> 
+	</div>
+</section>
+<section class="py-5" id="reviews">
+	<h1>Customer Reviews</h1>
+	<div class="container customer-reviews">
+		<img src="images/jerry.jpg" class="jerry" alt="image of Jerry Seinfeld">
+		<div class="reviews">
+			<p class="text-monospace text-center">&#34;Big lettuce, big carrots, tomatoes like volleyballs.&#34;</p>
+			<p class="text-right">&#8212; Jerry Seinfeld, on The BIG Salad</p>	
+		</div>
+	</div>
+</section>
+<section class="py-5">
+	<h1>About Us</h1>
+		<div class="container about-us">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum, metus sed bibendum dapibus, lectus libero eleifend sapien, sit amet vehicula ligula purus vel ex. Morbi porta libero id ipsum eleifend commodo a ut tortor. Morbi eu magna a enim maximus pharetra. Nam consectetur iaculis sapien tincidunt vehicula.</p>
+		</div>
+</section>
+<footer>
+	<p class="text-center">Copyright &copy; Dancel 2020. All Rights Reserved</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXwXAH2rGVKtHVxxrHRBtIJ4YLOWB5DTM&callback=initMap"
+    async defer></script>
+<script src="js/main.js"></script>
+</body>
+</html>
